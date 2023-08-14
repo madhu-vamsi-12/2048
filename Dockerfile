@@ -4,7 +4,7 @@ RUN apt-get update -y
 
 RUN apt-get install -y nginx git
 
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+RUN echo "daemon off;" >>/etc/nginx/nginx.conf
 
 RUN git clone https://github.com/madhu-vamsi-12/2048.git
 
